@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Tree } from "lucide-react";
+import { TreeDeciduous } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Tree className="h-6 w-6" />
+              <TreeDeciduous className="h-6 w-6" />
               <span className="text-xl font-bold">EcoStruct</span>
             </div>
             <p className="text-sm text-eco-neutral-light">

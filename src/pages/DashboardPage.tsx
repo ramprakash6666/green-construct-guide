@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { Tree } from "lucide-react";
+import { TreeDeciduous } from "lucide-react";
 
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();
@@ -71,7 +70,7 @@ const DashboardPage: React.FC = () => {
         <Card>
           <CardContent className="py-8">
             <div className="flex flex-col items-center justify-center text-center">
-              <Tree className="h-12 w-12 text-eco-green-dark mb-4" />
+              <TreeDeciduous className="h-12 w-12 text-eco-green-dark mb-4" />
               <h2 className="text-2xl font-semibold mb-2">Make a Difference</h2>
               <p className="mb-6 max-w-lg">
                 By choosing sustainable construction materials, you're helping to reduce 

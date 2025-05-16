@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { Leaf, Building, TreeDeciduous, SolarPanel } from "lucide-react";
+import { Leaf, Building, TreeDeciduous, Zap } from "lucide-react";
 import { mockMaterials } from "@/lib/mockData";
 import MaterialCard from "@/components/materials/MaterialCard";
 
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
                   <h3 className="font-semibold text-lg">Renewable</h3>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-8 rounded-tr-3xl rounded-bl-3xl">
-                  <SolarPanel className="h-12 w-12 text-white mb-2" />
+                  <Zap className="h-12 w-12 text-white mb-2" />
                   <h3 className="font-semibold text-lg">Efficient</h3>
                 </div>
               </div>

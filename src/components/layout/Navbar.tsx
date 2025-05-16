@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger 
 } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/context/AuthContext";
-import { Tree, Leaf } from "lucide-react";
+import { TreeDeciduous, Leaf } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const { user, logout, isAdmin } = useAuth();
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <Tree className="h-6 w-6 text-eco-green-dark" />
+          <TreeDeciduous className="h-6 w-6 text-eco-green-dark" />
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl font-bold text-eco-green-dark">EcoStruct</span>
           </Link>
