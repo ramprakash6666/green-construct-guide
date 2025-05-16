@@ -31,6 +31,30 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
     return "bg-red-50 text-red-600";
   };
 
+  // Function to determine the badge style based on category
+  const getCategoryBadgeStyle = (category: string) => {
+    const categoryStyles: Record<string, string> = {
+      "Flooring": "bg-blue-50 text-blue-700 border-blue-200",
+      "Wall": "bg-purple-50 text-purple-700 border-purple-200",
+      "Structural": "bg-slate-50 text-slate-700 border-slate-200",
+      "Insulation": "bg-orange-50 text-orange-700 border-orange-200",
+      "Roofing": "bg-red-50 text-red-700 border-red-200",
+      "Finish": "bg-pink-50 text-pink-700 border-pink-200",
+      "Countertop": "bg-indigo-50 text-indigo-700 border-indigo-200",
+      "Concrete": "bg-gray-50 text-gray-700 border-gray-200",
+      "Metal": "bg-zinc-50 text-zinc-700 border-zinc-200",
+      "Wood": "bg-amber-50 text-amber-700 border-amber-200",
+      "Brick": "bg-rose-50 text-rose-700 border-rose-200",
+      "Glass": "bg-sky-50 text-sky-700 border-sky-200",
+      "Stone": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "Plumbing": "bg-cyan-50 text-cyan-700 border-cyan-200",
+      "Electrical": "bg-teal-50 text-teal-700 border-teal-200",
+      "Hardware": "bg-lime-50 text-lime-700 border-lime-200",
+    };
+    
+    return categoryStyles[category] || "bg-gray-100 text-gray-800";
+  };
+
   return (
     <div className="rounded-md border">
       <Table>
@@ -49,7 +73,12 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
             <TableRow key={material.id}>
               <TableCell className="font-medium">{material.name}</TableCell>
               <TableCell>
-                <Badge variant="outline">{material.category}</Badge>
+                <Badge 
+                  variant="outline" 
+                  className={getCategoryBadgeStyle(material.category)}
+                >
+                  {material.category}
+                </Badge>
               </TableCell>
               <TableCell className="text-center">
                 <div className="flex items-center justify-center">

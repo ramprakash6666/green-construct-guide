@@ -77,6 +77,8 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="institutional">Institutional</SelectItem>
                   <SelectItem value="healthcare">Healthcare</SelectItem>
                   <SelectItem value="educational">Educational</SelectItem>
+                  <SelectItem value="infrastructure">Infrastructure</SelectItem>
+                  <SelectItem value="agricultural">Agricultural</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -98,6 +100,8 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="coastal">Coastal</SelectItem>
                   <SelectItem value="tropical">Tropical</SelectItem>
                   <SelectItem value="alpine">Alpine</SelectItem>
+                  <SelectItem value="desert">Desert</SelectItem>
+                  <SelectItem value="mediterranean">Mediterranean</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -136,6 +140,8 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="energy">Energy Efficiency</SelectItem>
                   <SelectItem value="health">Health & Wellness</SelectItem>
                   <SelectItem value="aesthetics">Aesthetics</SelectItem>
+                  <SelectItem value="speed">Construction Speed</SelectItem>
+                  <SelectItem value="availability">Local Availability</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -167,6 +173,17 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="hvac">HVAC Components</SelectItem>
                   <SelectItem value="landscape">Landscaping</SelectItem>
                   <SelectItem value="paving">Paving & Hardscaping</SelectItem>
+                  <SelectItem value="paint">Paints & Coatings</SelectItem>
+                  <SelectItem value="concrete">Concrete Materials</SelectItem>
+                  <SelectItem value="metal">Metal Components</SelectItem>
+                  <SelectItem value="wood">Wood Products</SelectItem>
+                  <SelectItem value="brick">Brick & Masonry</SelectItem>
+                  <SelectItem value="glass">Glass & Glazing</SelectItem>
+                  <SelectItem value="stone">Stone Materials</SelectItem>
+                  <SelectItem value="ceramics">Ceramic Materials</SelectItem>
+                  <SelectItem value="adhesives">Adhesives & Sealants</SelectItem>
+                  <SelectItem value="hardware">Hardware & Fasteners</SelectItem>
+                  <SelectItem value="waterproofing">Waterproofing Materials</SelectItem>
                 </SelectContent>
               </Select>
             </div>
