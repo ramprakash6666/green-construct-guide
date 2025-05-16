@@ -7,10 +7,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-eco-green-dark text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <TreeDeciduous className="h-6 w-6" />
+              <img 
+                src="/lovable-uploads/487b1f29-ebaf-43e3-a3e4-0eb944e34bee.png" 
+                alt="EcoStruct Logo" 
+                className="h-12 w-12 rounded-full"
+              />
               <span className="text-xl font-bold">EcoStruct</span>
             </div>
             <p className="text-sm text-eco-neutral-light">
@@ -56,23 +60,6 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <address className="not-italic text-sm text-eco-neutral-light">
-              <p>Email: info@ecostruct.example</p>
-              <p>Phone: (123) 456-7890</p>
-              <p>123 Eco Street</p>
-              <p>Green City, EC 12345</p>
-            </address>
-          </div>
-        </div>
-
-        <div className="border-t border-eco-neutral-light mt-8 pt-6 text-sm text-eco-neutral-light">
-          <p>© {new Date().getFullYear()} EcoStruct. All rights reserved.</p>
-          <p className="mt-2">
-            This is a demo application for eco-friendly construction materials.
-          </p>
         </div>
       </div>
     </footer>
