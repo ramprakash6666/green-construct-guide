@@ -22,11 +22,11 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-2">
           <img 
             src="/lovable-uploads/487b1f29-ebaf-43e3-a3e4-0eb944e34bee.png" 
-            alt="EcoStruct Logo" 
+            alt="Eco-Construction Logo" 
             className="h-8 w-8 rounded-full"
           />
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-eco-green-dark">EcoStruct</span>
+            <span className="text-xl font-bold text-eco-green-dark">Eco-Construction</span>
           </Link>
         </div>
         

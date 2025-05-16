@@ -74,6 +74,9 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="residential">Residential</SelectItem>
                   <SelectItem value="commercial">Commercial</SelectItem>
                   <SelectItem value="industrial">Industrial</SelectItem>
+                  <SelectItem value="institutional">Institutional</SelectItem>
+                  <SelectItem value="healthcare">Healthcare</SelectItem>
+                  <SelectItem value="educational">Educational</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -92,6 +95,9 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="temperate">Temperate</SelectItem>
                   <SelectItem value="hot">Hot & Dry</SelectItem>
                   <SelectItem value="humid">Hot & Humid</SelectItem>
+                  <SelectItem value="coastal">Coastal</SelectItem>
+                  <SelectItem value="tropical">Tropical</SelectItem>
+                  <SelectItem value="alpine">Alpine</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -109,6 +115,7 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="low">Low</SelectItem>
                   <SelectItem value="medium">Medium</SelectItem>
                   <SelectItem value="high">High</SelectItem>
+                  <SelectItem value="premium">Premium</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -126,6 +133,9 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                   <SelectItem value="sustainability">Sustainability</SelectItem>
                   <SelectItem value="durability">Durability</SelectItem>
                   <SelectItem value="cost">Cost Efficiency</SelectItem>
+                  <SelectItem value="energy">Energy Efficiency</SelectItem>
+                  <SelectItem value="health">Health & Wellness</SelectItem>
+                  <SelectItem value="aesthetics">Aesthetics</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -141,12 +151,22 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Applications</SelectItem>
+                  <SelectItem value="foundation">Foundation</SelectItem>
+                  <SelectItem value="framing">Structural Framing</SelectItem>
+                  <SelectItem value="exterior">Exterior Walls</SelectItem>
+                  <SelectItem value="roofing">Roofing</SelectItem>
+                  <SelectItem value="insulation">Insulation</SelectItem>
                   <SelectItem value="flooring">Flooring</SelectItem>
                   <SelectItem value="wall">Wall Construction</SelectItem>
-                  <SelectItem value="insulation">Insulation</SelectItem>
-                  <SelectItem value="structural">Structural Elements</SelectItem>
-                  <SelectItem value="finish">Finishes</SelectItem>
+                  <SelectItem value="finish">Interior Finishes</SelectItem>
                   <SelectItem value="countertop">Countertops</SelectItem>
+                  <SelectItem value="windows">Windows</SelectItem>
+                  <SelectItem value="doors">Doors</SelectItem>
+                  <SelectItem value="plumbing">Plumbing Materials</SelectItem>
+                  <SelectItem value="electrical">Electrical Systems</SelectItem>
+                  <SelectItem value="hvac">HVAC Components</SelectItem>
+                  <SelectItem value="landscape">Landscaping</SelectItem>
+                  <SelectItem value="paving">Paving & Hardscaping</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -157,7 +177,7 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
             className="w-full bg-eco-green-dark hover:bg-eco-green-light text-white"
             disabled={isLoading || !isFormValid()}
           >
-            {isLoading ? "Getting Recommendations..." : "Get Recommendations"}
+            {isLoading ? "Getting Recommendations..." : "Get AI Recommendations"}
           </Button>
         </form>
       </CardContent>

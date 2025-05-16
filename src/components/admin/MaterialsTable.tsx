@@ -23,6 +23,14 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
   onEdit,
   onDelete,
 }) => {
+  // Function to determine the color of the sustainability badge
+  const getSustainabilityBadgeColor = (score: number) => {
+    if (score >= 90) return "bg-green-100 text-green-800";
+    if (score >= 70) return "bg-green-50 text-green-600";
+    if (score >= 50) return "bg-yellow-50 text-yellow-600";
+    return "bg-red-50 text-red-600";
+  };
+
   return (
     <div className="rounded-md border">
       <Table>
@@ -32,6 +40,7 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
             <TableHead>Category</TableHead>
             <TableHead className="text-center">Sustainability</TableHead>
             <TableHead className="text-center">Durability</TableHead>
+            <TableHead className="text-center">Carbon Footprint</TableHead>
             <TableHead className="text-right">Actions</TableHead>
           </TableRow>
         </TableHeader>
@@ -45,13 +54,7 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
               <TableCell className="text-center">
                 <div className="flex items-center justify-center">
                   <span
-                    className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-medium ${
-                      material.sustainability.score >= 90
-                        ? "bg-green-100 text-green-800"
-                        : material.sustainability.score >= 70
-                        ? "bg-green-50 text-green-600"
-                        : "bg-yellow-50 text-yellow-600"
-                    }`}
+                    className={`inline-block w-8 h-8 rounded-full flex items-center justify-center font-medium ${getSustainabilityBadgeColor(material.sustainability.score)}`}
                   >
                     {material.sustainability.score}
                   </span>
@@ -59,6 +62,9 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
               </TableCell>
               <TableCell className="text-center">
                 {material.properties.durability}/10
+              </TableCell>
+              <TableCell className="text-center">
+                {material.sustainability.carbonFootprint}
               </TableCell>
               <TableCell className="text-right">
                 <div className="flex justify-end space-x-2">
@@ -82,7 +88,7 @@ const MaterialsTable: React.FC<MaterialsTableProps> = ({
           ))}
           {materials.length === 0 && (
             <TableRow>
-              <TableCell colSpan={5} className="h-24 text-center">
+              <TableCell colSpan={6} className="h-24 text-center">
                 No materials found.
               </TableCell>
             </TableRow>

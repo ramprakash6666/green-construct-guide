@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -171,6 +170,16 @@ const MaterialForm: React.FC<MaterialFormProps> = ({
                     <SelectItem value="Structural">Structural</SelectItem>
                     <SelectItem value="Finish">Finish</SelectItem>
                     <SelectItem value="Countertop">Countertop</SelectItem>
+                    <SelectItem value="Roofing">Roofing</SelectItem>
+                    <SelectItem value="Foundation">Foundation</SelectItem>
+                    <SelectItem value="Framing">Framing</SelectItem>
+                    <SelectItem value="Windows">Windows</SelectItem>
+                    <SelectItem value="Doors">Doors</SelectItem>
+                    <SelectItem value="Plumbing">Plumbing</SelectItem>
+                    <SelectItem value="Electrical">Electrical</SelectItem>
+                    <SelectItem value="HVAC">HVAC</SelectItem>
+                    <SelectItem value="Landscape">Landscape</SelectItem>
+                    <SelectItem value="Paving">Paving</SelectItem>
                     <SelectItem value="Multiple">Multiple</SelectItem>
                   </SelectContent>
                 </Select>
