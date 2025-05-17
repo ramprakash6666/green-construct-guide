@@ -1,9 +1,6 @@
-# Welcome to your Lovable project
+Project info
 
-## Project info
-
-**URL**: https://lovable.dev/projects/4a865092-8366-4913-b18e-2e7a809f8e8f
-
+**URL**:(https://eco-construction-b216fd.netlify.app/)
 ## How can I edit this code?
 
 There are several ways of editing your application.
