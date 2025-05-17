@@ -1,70 +1,59 @@
-Project info
+### Project Details
 
-**URL**:(https://eco-construction-b216fd.netlify.app/)
-## How can I edit this code?
+Website: (https://eco-construction-b216fd.netlify.app/)
 
-There are several ways of editing your application.
+**How can I make edits to this code?**
 
-**Use Lovable**
+There are multiple instructions regarding the modification of your application.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4a865092-8366-4913-b18e-2e7a809f8e8f) and start prompting.
+For those who choose to 'Lovable'
 
-Changes made via Lovable will be committed automatically to this repo.
+Just navigate to the 'Lovable Project' section and begin issuing commands.
 
-**Use your preferred IDE**
+All modifications through Lovable will be automatically synced to this repository.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+For those who prefer using an IDE of their choice
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+In case you want to work offline and wish to use your own IDE, you may clone this repo and push your changes. All pushed changes will reflect in Lovable.
 
-Follow these steps:
+The only prerequisite is having Node.js & npm installed - which can be done through nvm.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Please follow along using the instructions below: 
 
-# Step 2: Navigate to the project directory.
+# Begin by executing Step 1: Clone the repository using the project Git URL. 
+
+`git clone <YOUR_GIT_URL>`
+
+# Step 2: Access the folder of the project.
+
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Set up the required dependencies.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm i 
+ 
+# Step 4: Initiate the development server with auto-reloading and an instant preview.
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Make changes to a file directly on GitHub  
 
-**Use GitHub Codespaces**
+List all file(s) that you want to modify.  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Select “Edit file” (pen symbol) on the top right corner of the file view.  
 
-## What technologies are used for this project?
+Perform necessary changes and commit changes.  
 
-This project is built with:
+edit using GitHub Codespaces  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Go to main page of particular repository.  
+Select “Code” (green button) on the upper right side.  
+Go to “Codespaces” tab.
 
-## How can I deploy this project?
+To open a new Codespace environment, select “New codespace.”
 
-Simply open [Lovable](https://lovable.dev/projects/4a865092-8366-4913-b18e-2e7a809f8e8f) and click on Share -> Publish.
+You may edit files within the Codespace and once finished, remember to commit and push your changes.
 
-## Can I connect a custom domain to my Lovable project?
+What
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
