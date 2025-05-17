@@ -1,59 +1,37 @@
-### Project Details
+### Project Overview  
+Website: [Eco-Construction](https://eco-construction-b216fd.netlify.app/)  
 
-Website: (https://eco-construction-b216fd.netlify.app/)
+#### Editing the Code  
+**Using Lovable**  
+Go to the 'Lovable Project' section and issue commands—changes sync automatically.  
 
-**How can I make edits to this code?**
-
-There are multiple instructions regarding the modification of your application.
-
-For those who choose to 'Lovable'
-
-Just navigate to the 'Lovable Project' section and begin issuing commands.
-
-All modifications through Lovable will be automatically synced to this repository.
-
-For those who prefer using an IDE of their choice
-
-In case you want to work offline and wish to use your own IDE, you may clone this repo and push your changes. All pushed changes will reflect in Lovable.
-
-The only prerequisite is having Node.js & npm installed - which can be done through nvm.
-
-Please follow along using the instructions below: 
-
-# Begin by executing Step 1: Clone the repository using the project Git URL. 
-
-`git clone <YOUR_GIT_URL>`
-
-# Step 2: Access the folder of the project.
-
+**Using an IDE**  
+Clone the repository:  
+```sh
+git clone <YOUR_GIT_URL>
+```
+Navigate to the project folder:  
+```sh
 cd <YOUR_PROJECT_NAME>
-
-# Step 3: Set up the required dependencies.
-
-npm i 
- 
-# Step 4: Initiate the development server with auto-reloading and an instant preview.
-
+```
+Install dependencies:  
+```sh
+npm i
+```
+Run the development server:  
+```sh
 npm run dev
+```
 
+#### Editing Directly on GitHub  
+- Open the file  
+- Click "Edit file" (pen icon)  
+- Make changes & commit  
 
-Make changes to a file directly on GitHub  
+#### Using GitHub Codespaces  
+- Go to the repository's main page  
+- Click "Code" → "Codespaces"  
+- Select "New codespace"  
+- Edit files, commit, and push changes  
 
-List all file(s) that you want to modify.  
-
-Select “Edit file” (pen symbol) on the top right corner of the file view.  
-
-Perform necessary changes and commit changes.  
-
-edit using GitHub Codespaces  
-
-Go to main page of particular repository.  
-Select “Code” (green button) on the upper right side.  
-Go to “Codespaces” tab.
-
-To open a new Codespace environment, select “New codespace.”
-
-You may edit files within the Codespace and once finished, remember to commit and push your changes.
-
-What
-
+Let me know if you need further refinements!
