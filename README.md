@@ -34,4 +34,3 @@ npm run dev
 - Select "New codespace"  
 - Edit files, commit, and push changes  
 
-Let me know if you need further refinements!
